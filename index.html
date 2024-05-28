@@ -6,6 +6,11 @@
     <title>Educational Web</title>
 
     <link rel="stylesheet" href="css/style.css">
+
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
     <script src="https://kit.fontawesome.com/6abc02b515.js" crossorigin="anonymous"></script>
 
 </head>
@@ -179,10 +184,10 @@
         </div>
     </section>
 
-    <section class="container testimonials_container">
+    <section class="container testimonials_container mySwiper">
         <h2>Students' Testimonials</h2>
-        <div>
-            <article class="testimonial">
+        <div class="swiper-wrapper">
+            <article class="testimonial swiper-slide">
                 <div class="avatar">
                     <img src="img/avatar1.jpg" alt="">
                 </div>
@@ -194,7 +199,7 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere veniam, tempora similique sapiente provident totam labore ad asperiores atque eius!</p>
                 </div>
             </article>
-            <article class="testimonial">
+            <article class="testimonial swiper-slide">
                 <div class="avatar">
                     <img src="img/avatar2.jpg" alt="">
                 </div>
@@ -206,7 +211,7 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere veniam, tempora similique sapiente provident totam labore ad asperiores atque eius!</p>
                 </div>
             </article>
-            <article class="testimonial">
+            <article class="testimonial swiper-slide">
                 <div class="avatar">
                     <img src="img/avatar3.jpg" alt="">
                 </div>
@@ -218,7 +223,7 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere veniam, tempora similique sapiente provident totam labore ad asperiores atque eius!</p>
                 </div>
             </article>
-            <article class="testimonial">
+            <article class="testimonial swiper-slide">
                 <div class="avatar">
                     <img src="img/avatar4.jpg" alt="">
                 </div>
@@ -230,7 +235,7 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere veniam, tempora similique sapiente provident totam labore ad asperiores atque eius!</p>
                 </div>
             </article>
-            <article class="testimonial">
+            <article class="testimonial swiper-slide">
                 <div class="avatar">
                     <img src="img/avatar5.jpg" alt="">
                 </div>
@@ -242,7 +247,7 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere veniam, tempora similique sapiente provident totam labore ad asperiores atque eius!</p>
                 </div>
             </article>
-            <article class="testimonial">
+            <article class="testimonial swiper-slide">
                 <div class="avatar">
                     <img src="img/avatar6.jpg" alt="">
                 </div>
@@ -254,7 +259,7 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere veniam, tempora similique sapiente provident totam labore ad asperiores atque eius!</p>
                 </div>
             </article>
-            <article class="testimonial">
+            <article class="testimonial swiper-slide">
                 <div class="avatar">
                     <img src="img/avatar7.jpg" alt="">
                 </div>
@@ -267,9 +272,26 @@
                 </div>
             </article>
         </div>
+        <div class="swiper-pagination"></div>
     </section>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
+    
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints:{
+        600: {
+            slidesPerView: 2
+        }
+      }
+    });
+    </script>
 </body>
 </html>
