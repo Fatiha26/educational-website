@@ -9,14 +9,18 @@
     <link rel="stylesheet" href="css/contact.css">
 
     <script src="https://kit.fontawesome.com/6abc02b515.js" crossorigin="anonymous"></script>
-
+    <style>
+        body{
+            background-image: url("img/bg-texture.png");
+        }
+    </style>
 
 </head>
 <body>
 
     <nav>
         <div class="container nav_container">
-            <a href="index.html"><h4>Education</h4></a>
+            <a href="index.html"><h4>LearnIt</h4></a>
             <ul class="nav_menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -28,12 +32,52 @@
         </div>
     </nav>
 
+    <section class="contact">
+        <div class="container contact_container">
+            <aside class="contact_aside">
+                <div class="aside_image">
+                    <img src="img/contact.svg" alt="">
+                </div>
+                <h2>Contact Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, ratione</p>
+                <ul class="contact_details">
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <h5>+8802947494</h5>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <h5>learnit@gmail.com</h5>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-map"></i>
+                        <h5>23,XYZ,CC</h5>
+                    </li>
+                </ul>
+                <ul class="contact_socials">
+                    <li><a href="#"<i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"<i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"<i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"<i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </aside>
 
+            <form action="https://formspree.io/f/xqkrvrej" class="contact_form" method="POST">
+                <div class="form_name">
+                    <input type="text" name="First Name" placeholder="First Name" required>
+                    <input type="text" name="Last Name" placeholder="Last Name" required>
+                </div>
+                <input type="email" name="email address" placeholder="Your email address" required>
+                <textarea name="Message" rows="7" placeholder="Message" required></textarea>
+                 <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="container footer_container">
             <div class="footer_1">
-                <a href="index.html" class="footer_logo"><h4>Education</h4></a>
+                <a href="index.html" class="footer_logo"><h4>LearnIt</h4></a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, unde.</p>
             </div>
             <div class="footer_2">
